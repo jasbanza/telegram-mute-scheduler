@@ -1,0 +1,28 @@
+{
+  "name": "telegram-group-user-pruner",
+  "description": "Kick inactive users from a group.",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "input": "^1.0.1",
+    "telegram": "^2.10.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasbanza/telegram-group-user-pruner.git"
+  },
+  "keywords": [
+    "telegram",
+    "group-management"
+  ],
+  "author": "jasbanza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasbanza/telegram-group-user-pruner/issues"
+  },
+  "homepage": "https://github.com/jasbanza/telegram-group-user-pruner#readme"
+}
