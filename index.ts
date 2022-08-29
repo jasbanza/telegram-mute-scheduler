@@ -5,7 +5,21 @@ import schedule, { Job } from "node-schedule";
 import input from "input"; // npm i input
 import { promises as fs } from "fs";
 import http from "http";
-import { arrayBuffer } from "stream/consumers";
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Server running...');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+
 
 let config: { api_id: number; api_hash: string };
 
