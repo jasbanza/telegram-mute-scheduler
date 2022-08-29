@@ -1,6 +1,7 @@
-keys.txt
-config
-
+config.json
+session.json
+tsconfig.json
+.vscode
 # Logs
 logs
 *.log

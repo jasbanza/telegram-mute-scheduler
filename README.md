@@ -1,2 +1,2 @@
-# telegram-group-user-pruner
-Kick inactive users from a group.
+# telegram-mute-scheduler
+Scheduler for muting group & user notifications on Telegram.

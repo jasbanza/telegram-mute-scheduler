@@ -1,0 +1,50 @@
+{
+  "tasks": [
+    {
+      "name": "Mute Osmosis Main",
+      "action": "mute",
+      "chatId": "-1001393698549",
+      "occurances": [
+        {
+          "at": { "dayOfWeek": 0, "hour": 16, "tz": "UTC" },
+          "durationSeconds": 61200
+        },
+        {
+          "at": { "dayOfWeek": 1, "hour": 16, "tz": "UTC" },
+          "durationSeconds": 61200
+        },
+        {
+          "at": { "dayOfWeek": 2, "hour": 16, "tz": "UTC" },
+          "durationSeconds": 244800
+        },
+        {
+          "at": { "dayOfWeek": 5, "hour": 16, "tz": "UTC" },
+          "durationSeconds": 147600
+        }
+      ]
+    },
+    {
+      "name": "Mute Kustomer Notifications",
+      "action": "mute",
+      "chatId": "-734984612",
+      "occurances": [
+        {
+          "at": { "dayOfWeek": 0, "hour": 16, "tz": "UTC" },
+          "durationSeconds": 61200
+        },
+        {
+          "at": { "dayOfWeek": 1, "hour": 16, "tz": "UTC" },
+          "durationSeconds": 61200
+        },
+        {
+          "at": { "dayOfWeek": 2, "hour": 16, "tz": "UTC" },
+          "durationSeconds": 244800
+        },
+        {
+          "at": { "dayOfWeek": 5, "hour": 16, "tz": "UTC" },
+          "durationSeconds": 147600
+        }
+      ]
+    }
+  ]
+}

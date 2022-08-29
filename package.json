@@ -1,19 +1,26 @@
 {
-  "name": "telegram-group-user-pruner",
-  "description": "Kick inactive users from a group.",
+  "name": "telegram-mute-scheduler",
+  "description": "Scheduler for muting group & user notifications on Telegram.",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "dependencies": {
     "input": "^1.0.1",
+    "node-schedule": "^2.1.0",
     "telegram": "^2.10.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node index.js",
+    "dev": "nodemon"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "session.json"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jasbanza/telegram-group-user-pruner.git"
+    "url": "git+https://github.com/jasbanza/telegram-mute-scheduler.git"
   },
   "keywords": [
     "telegram",
@@ -22,7 +29,11 @@
   "author": "jasbanza",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jasbanza/telegram-group-user-pruner/issues"
+    "url": "https://github.com/jasbanza/telegram-mute-scheduler/issues"
   },
-  "homepage": "https://github.com/jasbanza/telegram-group-user-pruner#readme"
+  "homepage": "https://github.com/jasbanza/telegram-mute-scheduler#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "@types/node-schedule": "^2.1.0"
+  }
 }
