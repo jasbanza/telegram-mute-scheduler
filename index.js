@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { TelegramClient } from "telegram"; // npm i telegram
 import { Api } from "telegram/tl/index.js";
 import { StringSession } from "telegram/sessions/index.js";
@@ -5,15 +6,14 @@ import schedule from "node-schedule";
 import input from "input"; // npm i input
 import { promises as fs } from "fs";
 import http from "http";
-const hostname = '127.0.0.1';
 const port = 3000;
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Server running...');
 });
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
 });
 let config;
 try {
