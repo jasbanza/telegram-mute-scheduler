@@ -1,6 +1,5 @@
 config.json
 session.json
-tsconfig.json
 package-lock.json
 .vscode
 # Logs
