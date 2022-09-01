@@ -1,6 +1,13 @@
 # telegram-mute-scheduler
 Scheduler for muting group & user notifications on Telegram.
 
+#### Please note: this is a work-in-progress and therefore instructions are not final. 
+ - ###### Web dashboard is under construction which will be used to edit and view schedules.
+ 
+## Prerequisites:
+ - ###### Telegram TDLib API credentials, which you can register on the telegram website: [https://core.telegram.org/api/obtaining_api_id](https://core.telegram.org/api/obtaining_api_id)
+ 
+
 ## Setup Instructions:
 
 ### 1) Set up files
@@ -17,11 +24,10 @@ cd telegram-mute-scheduler
 npm install
 ```
 
-###### Create config.json from template and edit accordingly:
+###### Create config.json from template and edit, making sure to set the telegram API details accordingly:
 ```bash
 cp /config/config-template.json /config/config.json
 ```
-
 
 ###### Set permissions on config folder so that the background service (root) can create and save the Telegram session.json:
 ```bash
