@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { TelegramClient } from "telegram"; // npm i telegram
 import { Api } from "telegram/tl/index.js";
 import { StringSession } from "telegram/sessions/index.js";
